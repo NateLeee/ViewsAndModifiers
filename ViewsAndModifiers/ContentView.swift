@@ -10,10 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.red)
-            .edgesIgnoringSafeArea(.all)
+        ZStack {
+            Color.blue
+            
+            Text("Hello World")
+                .padding()
+                .background(Color.red)
+                .padding()
+                .background(Color.blue)
+                .padding()
+                .background(Color.green)
+                .padding()
+                .background(Color.yellow)
+        }
     }
 }
 
